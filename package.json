@@ -21,5 +21,8 @@
   "homepage": "https://github.com/novakda/codementor-jamstack-blog#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2"
+  },
+  "dependencies": {
+    "luxon": "^3.7.2"
   }
 }
