@@ -43,10 +43,11 @@ Plans:
   3. You can access /admin on the live site and see a login prompt
   4. You can log in with an invited email address using Netlify Identity
   5. You can create or edit a blog post through the CMS and see the commit appear in your repository
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- TBD
+- [ ] 02-01-PLAN.md — Deploy site to Netlify from GitHub and verify build
+- [ ] 02-02-PLAN.md — Enable Identity, Git Gateway, add widget, and test CMS end-to-end
 
 ## Progress
 
@@ -56,4 +57,4 @@ Phases execute in numeric order: 1 → 2
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. CMS Integration | 0/2 | Not started | - |
-| 2. Netlify Deployment | 0/TBD | Not started | - |
+| 2. Netlify Deployment | 0/2 | Not started | - |
