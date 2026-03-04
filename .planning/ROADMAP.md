@@ -27,10 +27,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The collection fields match your existing frontmatter structure (title, author, date, tags, image, description, body)
   4. You can upload a test image and the path matches your existing asset structure
   5. The admin folder persists through rebuilds (not deleted)
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- TBD
+- [ ] 01-01-PLAN.md — Create CMS admin files (index.html + config.yml)
+- [ ] 01-02-PLAN.md — Add passthrough copy and verify CMS locally
 
 ### Phase 2: Netlify Deployment
 **Goal**: You have a live site with authenticated CMS that commits changes to your repository
@@ -54,5 +55,5 @@ Phases execute in numeric order: 1 → 2
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. CMS Integration | 0/TBD | Not started | - |
+| 1. CMS Integration | 0/2 | Not started | - |
 | 2. Netlify Deployment | 0/TBD | Not started | - |
