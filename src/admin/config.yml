@@ -1,0 +1,49 @@
+backend:
+  name: test-repo
+media_folder: "src/assets/blog"
+public_folder: "/assets/blog"
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - {
+          label: "Author",
+          name: "author",
+          widget: "string",
+          default: "Kevin Powell",
+          required: false,
+        }
+      - {
+          label: "Date",
+          name: "date",
+          widget: "datetime",
+          format: "YYYY-MM-DD",
+          date_format: "YYYY-MM-DD",
+          time_format: false,
+          required: true,
+        }
+      - {
+          label: "Featured",
+          name: "featured",
+          widget: "boolean",
+          default: false,
+          required: false,
+        }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - {
+          label: "Image Alt Text",
+          name: "imageAlt",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
