@@ -38,7 +38,7 @@ See: .planning/PROJECT.md (updated 2026-03-03)
 Phase: 2 of 2 (Netlify Deployment)
 Current Plan: 2 of 2
 Status: Complete
-Last activity: 2026-03-04 — Plan 02-02 complete (Identity and Git Gateway setup)
+Last activity: 2026-03-05 - Completed quick task 1: Update README to explain Decap CMS replacement and Claude Code learning partner approach
 
 Progress: [██████████] 100% (4/4 plans complete)
 
@@ -85,6 +85,12 @@ None yet.
 ### Blockers/Concerns
 
 **Ecosystem deprecation risk:** Netlify Identity was deprecated in February 2026 but reversed after community feedback. Decap CMS is unmaintained since January 2026. For this tutorial project, the stack remains functional. For production use, Sveltia CMS (drop-in Decap replacement) is recommended migration path.
+
+### Quick Tasks Completed
+
+| # | Description | Date | Commit | Directory |
+|---|-------------|------|--------|-----------|
+| 1 | Update README to explain Decap CMS replacement and Claude Code learning partner approach | 2026-03-05 | dae69ca | [1-update-readme-to-explain-decap-cms-repla](./quick/1-update-readme-to-explain-decap-cms-repla/) |
 
 ## Session Continuity
 
