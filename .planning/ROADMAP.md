@@ -13,7 +13,7 @@ This roadmap guides you through completing the Kevin Powell JAMstack blog tutori
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: CMS Integration** - Configure Decap CMS admin interface and test locally
-- [ ] **Phase 2: Netlify Deployment** - Deploy site and enable authentication for live CMS
+- [x] **Phase 2: Netlify Deployment** - Deploy site and enable authentication for live CMS
 
 ## Phase Details
 
@@ -47,7 +47,7 @@ Plans:
 
 Plans:
 - [x] 02-01-PLAN.md — Deploy site to Netlify from GitHub and verify build
-- [ ] 02-02-PLAN.md — Enable Identity, Git Gateway, add widget, and test CMS end-to-end
+- [x] 02-02-PLAN.md — Enable Identity, Git Gateway, add widget, and test CMS end-to-end
 
 ## Progress
 
@@ -57,4 +57,4 @@ Phases execute in numeric order: 1 → 2
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. CMS Integration | 2/2 | Complete | 2026-03-04 |
-| 2. Netlify Deployment | 1/2 | In progress | - |
+| 2. Netlify Deployment | 2/2 | Complete | 2026-03-04 |
