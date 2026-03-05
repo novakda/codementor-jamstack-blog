@@ -2,7 +2,7 @@
 
 ## What This Is
 
-A JAMstack blog built with Eleventy and Decap CMS, following the Kevin Powell tutorial updated for current tools. This is both a learning exercise and an evaluation of the Eleventy + Decap CMS + Netlify stack for potential use on pattern158.solutions, a career portfolio site.
+A JAMstack blog built with Eleventy and Decap CMS, following the Kevin Powell tutorial updated for current tools. Completed as both a learning exercise and an evaluation of the Eleventy + Decap CMS + Netlify stack for potential use on pattern158.solutions, a career portfolio site. Live at tangerine-ganache-973e48.netlify.app.
 
 ## Core Value
 
@@ -11,8 +11,6 @@ A working end-to-end JAMstack content pipeline: edit content in a CMS, auto-buil
 ## Requirements
 
 ### Validated
-
-<!-- Shipped and confirmed valuable. Inferred from existing codebase. -->
 
 - ✓ Static site generation with Eleventy 3.x — existing
 - ✓ Blog posts authored in Markdown with YAML frontmatter — existing
@@ -24,40 +22,42 @@ A working end-to-end JAMstack content pipeline: edit content in a CMS, auto-buil
 - ✓ Date formatting via Luxon postDate filter — existing
 - ✓ CSS styling with custom properties and responsive design — existing
 - ✓ Asset passthrough for images and static files — existing
+- ✓ Decap CMS integrated for browser-based content editing — v1.0
+- ✓ CMS admin panel accessible at /admin — v1.0
+- ✓ CMS configured to create/edit blog posts with all frontmatter fields — v1.0
+- ✓ Netlify Identity for CMS authentication — v1.0
+- ✓ Site deployed to Netlify with automatic builds on git push — v1.0
+- ✓ Netlify build configuration (npm run build, public directory) — v1.0
 
 ### Active
 
-<!-- Current scope. Building toward these. -->
-
-- [ ] Decap CMS integrated for browser-based content editing
-- [ ] CMS admin panel accessible at /admin
-- [ ] CMS configured to create/edit blog posts with all frontmatter fields
-- [ ] Netlify Identity for CMS authentication
-- [ ] Site deployed to Netlify with automatic builds on git push
-- [ ] Netlify build configuration (netlify.toml or UI config)
+(None — tutorial scope complete. New requirements would come from a future milestone.)
 
 ### Out of Scope
-
-<!-- Explicit boundaries. -->
 
 - Career portfolio data pipeline — separate project after evaluation
 - SQLite/structured data integration with Eleventy — future exploration, not this tutorial
 - Custom domain setup — can be done later via Netlify settings
 - Multiple content types beyond blog posts — tutorial scope only
 - Advanced CMS features (editorial workflow, media library customization) — beyond tutorial
+- Sveltia CMS migration — future consideration after tutorial evaluation
 
 ## Context
 
-**Origin:** Kevin Powell's "Build a JAMstack blog" YouTube tutorial (https://www.youtube.com/watch?v=4wD00RT6d-g). The tutorial originally used Netlify CMS, which has been rebranded to Decap CMS. The code changes are minimal (package names and CDN URLs).
+**Shipped v1.0** with 4,263 LOC across HTML, Nunjucks, CSS, JS, YAML, and Markdown.
+Tech stack: Eleventy 3.x, Decap CMS (CDN-loaded), Netlify, Netlify Identity, Git Gateway.
+Live site: tangerine-ganache-973e48.netlify.app
 
-**Evaluation goals:** This project evaluates whether the Eleventy + CMS stack could work for pattern158.solutions, a career portfolio site. Key questions being tested:
-1. Is Markdown with frontmatter a viable content foundation?
-2. Does the CMS editing experience work well enough for regular content updates?
-3. How smooth is the Netlify CI/CD pipeline?
+**Evaluation findings:**
+1. Markdown with frontmatter works well as content foundation
+2. CMS editing experience is functional for blog posts
+3. Netlify CI/CD pipeline is smooth (push → build → deploy in seconds)
+4. Content pipeline works end-to-end: CMS edit → GitHub commit → auto-rebuild
 
-**Future consideration:** The portfolio site would also need to integrate structured data from a SQLite database (clients, emails, technologies, testimonials). Eleventy's `_data/` directory system could potentially handle this, but that's out of scope for this tutorial project.
-
-**Existing codebase:** Eleventy 3.x site is fully built — homepage, blog listing, article pages, CSS, templates. Only the CMS layer and deployment remain.
+**Ecosystem concerns:**
+- Decap CMS unmaintained since January 2026. Sveltia CMS is the recommended migration path.
+- Netlify Identity deprecation was reversed after community feedback but remains a risk.
+- For production use, evaluate alternative auth and CMS options.
 
 ## Constraints
 
@@ -69,9 +69,14 @@ A working end-to-end JAMstack content pipeline: edit content in a CMS, auto-buil
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Decap CMS over alternatives | Direct successor to Netlify CMS, tutorial steps translate 1:1 | — Pending |
-| Netlify Identity over GitHub OAuth | Built into Netlify, matches tutorial approach, simplest setup | — Pending |
-| Tutorial scope only | Evaluate stack feasibility before investing in portfolio features | — Pending |
+| Decap CMS over alternatives | Direct successor to Netlify CMS, tutorial steps translate 1:1 | ✓ Good — worked as drop-in replacement |
+| Netlify Identity over GitHub OAuth | Built into Netlify, matches tutorial approach, simplest setup | ✓ Good — invite-only provides security |
+| Tutorial scope only | Evaluate stack feasibility before investing in portfolio features | ✓ Good — evaluation complete |
+| CDN-loaded CMS (no npm install) | Simplest approach for tutorial | ✓ Good — no dependency management |
+| test-repo → git-gateway phasing | Isolate CMS interface testing from auth complexity | ✓ Good — caught issues separately |
+| Identity widget site-wide | Required for invite email token detection on homepage | ✓ Good — invite flow works |
+| Invite-only registration | CMS grants write access to repo; open registration too risky | ✓ Good — security appropriate |
+| Explicit branch: main in git-gateway | Prevents default 'master' branch mismatch | ✓ Good — prevented silent failures |
 
 ---
-*Last updated: 2026-03-03 after initialization*
+*Last updated: 2026-03-05 after v1.0 milestone*
