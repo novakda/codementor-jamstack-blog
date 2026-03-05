@@ -12,7 +12,7 @@ This roadmap guides you through completing the Kevin Powell JAMstack blog tutori
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: CMS Integration** - Configure Decap CMS admin interface and test locally
+- [x] **Phase 1: CMS Integration** - Configure Decap CMS admin interface and test locally
 - [ ] **Phase 2: Netlify Deployment** - Deploy site and enable authentication for live CMS
 
 ## Phase Details
@@ -30,8 +30,8 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans:** 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Create CMS admin files (index.html + config.yml)
-- [ ] 01-02-PLAN.md — Add passthrough copy and verify CMS locally
+- [x] 01-01-PLAN.md — Create CMS admin files (index.html + config.yml)
+- [x] 01-02-PLAN.md — Add passthrough copy and verify CMS locally
 
 ### Phase 2: Netlify Deployment
 **Goal**: You have a live site with authenticated CMS that commits changes to your repository
@@ -46,7 +46,7 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Deploy site to Netlify from GitHub and verify build
+- [x] 02-01-PLAN.md — Deploy site to Netlify from GitHub and verify build
 - [ ] 02-02-PLAN.md — Enable Identity, Git Gateway, add widget, and test CMS end-to-end
 
 ## Progress
@@ -56,5 +56,5 @@ Phases execute in numeric order: 1 → 2
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. CMS Integration | 0/2 | Not started | - |
-| 2. Netlify Deployment | 0/2 | Not started | - |
+| 1. CMS Integration | 2/2 | Complete | 2026-03-04 |
+| 2. Netlify Deployment | 1/2 | In progress | - |

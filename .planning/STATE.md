@@ -22,29 +22,30 @@ See: .planning/PROJECT.md (updated 2026-03-03)
 
 ## Current Position
 
-Phase: 1 of 2 (CMS Integration)
-Plan: None yet (phase planning pending)
-Status: Ready to plan
-Last activity: 2026-03-04 — Roadmap created
+Phase: 2 of 2 (Netlify Deployment)
+Current Plan: 1 of 2
+Status: In progress
+Last activity: 2026-03-04 — Plan 02-01 complete (Netlify deployment)
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [████████░░] 75% (3/4 plans complete)
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0
-- Average duration: N/A
-- Total execution time: 0 hours
+- Total plans completed: 3
+- Average duration: N/A (mix of automated and manual tasks)
+- Total execution time: ~1 hour (automated tasks only)
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 1 | 2/2 | ~45 min | ~22 min |
+| 2 | 1/2 | User-paced | N/A |
 
 **Recent Trend:**
-- Last 5 plans: None yet
-- Trend: N/A
+- Last 3 plans: 01-01 (automated), 01-02 (automated), 02-01 (manual)
+- Trend: Phase 1 automated, Phase 2 includes manual service configuration
 
 *Updated after each plan completion*
 
@@ -58,6 +59,8 @@ Recent decisions affecting current work:
 - Decap CMS chosen as direct successor to Netlify CMS from tutorial
 - Netlify Identity chosen for authentication (matches tutorial, simplest setup)
 - Tutorial scope only (evaluate stack before portfolio features)
+- Deploy-first approach: Site deployed with test-repo backend before adding authentication (02-01)
+- Netlify build settings: npm run build, public directory, main branch (02-01)
 
 ### Pending Todos
 
@@ -70,5 +73,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-03-04
-Stopped at: Roadmap created, ready for Phase 1 planning
+Stopped at: Plan 02-01 complete — Site deployed to Netlify, ready for 02-02 (authentication configuration)
 Resume file: None
